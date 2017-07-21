@@ -1,0 +1,194 @@
+html {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+}
+
+header {
+    height: 15vh;
+    margin-bottom: 1vh;
+}
+
+body {
+    background-color: #EEF;
+    background: linear-gradient(to bottom, #EEF, #CCD);
+    background-size: cover;
+    display: table-cell;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    flex-flow: column;
+    justify-content: center;
+    margin: 2%;
+    position: relative;
+}
+
+main {
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.8) 30%, rgba(255,255,255,0));
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+button {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+hr {
+    border: 1px inset #91B9A4;
+    width: 98%;
+}
+
+button {
+    font-size: 2rem;
+    flex: auto;
+    margin: 1%;
+}
+
+textarea {
+    font-size: 2rem;
+    height: 50vh;
+    margin-top: 0;
+    margin: 5% auto;
+    width: 80%;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.whatIsThis {
+    padding: 5%;
+}
+
+.textInput,
+.twitter-typeahead,
+.tt-input {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.convo {
+    display: table-cell;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-height: 50vh;
+    width: 80%;
+}
+
+.convo button {
+    margin: 1%;
+}
+
+.mf {
+    display: inline-flex;
+    width: 80%;
+    margin: 1% auto;
+}
+
+.sayBtn {
+    margin: 1% auto;
+    width: 80%;
+}
+
+.greyMetal {
+    background-color: rgb(120, 120, 130);
+    background: linear-gradient(to bottom, rgb(180, 180, 210), rgb(140, 140, 160));
+    border-width: 1px;
+    margin: 1% 0;
+}
+.selected,
+.greyMetal:hover,
+.greyMetal:active {
+    background-color: rgb(88, 88, 160);
+    background: linear-gradient(to bottom, rgb(140, 140, 190), rgb(110, 110, 160));
+
+}
+
+
+.purpleGlass {
+    background-color: #BE77FC;
+    background: linear-gradient(to bottom right, rgba(190, 119, 252, 0.7), rgba(211, 161, 254, 0.6), rgba(190, 119, 252, 0.5));
+    border: 1px solid rgb(60, 96, 116);
+    padding: 5px;
+}
+
+.short {
+    border-radius: 0;
+    flex-direction: row;
+    font-size: 1.25em;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+}
+
+.btn-pos {
+    background-color: #97D38D;
+    background: linear-gradient(to bottom, #BDE5B7, #97D38D);
+}
+
+.btn-neg {
+    background-color: #FFAAAA;
+    background: linear-gradient(to bottom, #FFCCCC, #FFAAAA);
+}
+
+.btn-meh {
+    background-color: #FFCEAA;
+    background: linear-gradient(to bottom, #FFE2CC, #FFCEAA);
+}
+
+.btn-nice {
+    background-color: #A9A9FE;
+    background: linear-gradient(to bottom, #D9D9FF, #A9A9FE);
+}
+
+@media screen and (max-height: 639px) {
+    body {
+        background-color: #CEC;
+        font-size: 0.75rem;
+        margin: 1%;
+    }
+    button {
+        font-size: 1rem;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    p {
+        line-height: 1.15;
+    }
+
+    .whatIsThis {
+        padding-top: 0;
+    }
+
+
+}
