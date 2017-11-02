@@ -25,6 +25,7 @@ body {
 
 main {
     background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.8) 30%, rgba(255,255,255,0));
+    min-height: 75vh;
 }
 
 p {
@@ -64,8 +65,6 @@ textarea {
 }
 
 footer {
-    position: fixed;
-    bottom: 10px;
     margin: 0 auto;
     text-align: center;
 }
@@ -79,6 +78,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.hidden {
+    display: none;
 }
 
 .whatIsThis {
@@ -108,7 +111,7 @@ footer {
 
 .mf {
     display: inline-flex;
-    width: 80%;
+    width: 100%;
     margin: 1% auto;
 }
 
@@ -143,8 +146,8 @@ footer {
     border-radius: 0;
     flex-direction: row;
     font-size: 1.25em;
-    margin: 1%;
-    padding: 1%;
+    margin: 1vh;
+    padding: 1vh;
     width: 30%;
 }
 
@@ -175,7 +178,7 @@ footer {
         margin: 1%;
     }
     button {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     header {

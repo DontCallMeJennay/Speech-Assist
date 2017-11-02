@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Message Bank</title>
     <!--[if lt IE 9]><meta http-equiv="refresh" content="0;URL=index2.html"><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://use.fontawesome.com/59c976fd61.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header class="info">
-        <button class="greyMetal small" id="helpBtn"><i class="fa fa-info-circle"></i></button>
-        <button class="greyMetal" id="talkBtn"><i class="fa fa-comments"></i></button>
-        <button class="greyMetal" id="kbBtn"><i class="fa fa-keyboard-o"></i></button>
+        <button class="greyMetal small" id="helpBtn"><i class="fa fa-info-circle"></i><span class="hidden">Go to instructions tab</span></button>
+        <button class="greyMetal" id="talkBtn"><i class="fa fa-comments"></i><span class="hidden">Go to speech buttons tab</span></button>
+        <button class="greyMetal" id="kbBtn"><i class="fa fa-keyboard-o"></i><span class="hidden">Go to text input tab</span></button>
     </header>
     <main>
         <section class="flex whatIsThis">
@@ -27,14 +27,16 @@
             <p><i class="fa fa-volume-up" aria-hidden="true"></i> Don't forget to turn up the volume on your device!</p>
             <h2>Which voice would you prefer?</h2>
             <div class="mf">
-                <button class="greyMetal sayBtn short" id="boy"><i class="fa fa-male" aria-hidden="true"></i></button>
-                <button class="greyMetal sayBtn short" id="girl"><i class="fa fa-female" aria-hidden="true"></i></button>
+                <button class="greyMetal sayBtn short" id="boy"><i class="fa fa-male" aria-hidden="true"></i>
+                <span class="hidden">Select male voice</span></button>
+                <button class="greyMetal sayBtn short" id="girl"><i class="fa fa-female" aria-hidden="true"></i>
+                <span class="hidden">Select female voice</span></button>
             </div>
         </section>
         <section class="flex textInput">
-            <textarea type='text' id="talkBox"></textarea>
-            <button class="purpleGlass sayBtn" id="sayIt">Speak</button>
-            <button class="purpleGlass sayBtn" id="clearIt">Clear</button>
+            <textarea type='text' id="talkBox" aria-label="Text input for spoken phrases"></textarea>
+            <button class="purpleGlass sayBtn" id="sayIt" value="push to talk">Speak</button>
+            <button class="purpleGlass sayBtn" id="clearIt" value="clear text">Clear</button>
         </section>
         <section class="convo">
             <button class="btn-pos" id="yesBtn" value="yes">Yes</button>
@@ -46,22 +48,22 @@
             <button class="btn-nice" id="lolBtn" value="hahahahaha">(laughing)</button>
             <button id="alsBtn" value="I have difficulty speaking, but I can hear and understand you. Thank you for your patience and understanding.">I have trouble speaking... (explain)</button>
             <button class="btn-meh" id="waitBtn" value="Just a minute">just a minute</button> 
-                        <button class="btn-neg" id="alertBtn">(Alert)</button>
+                        <button class="btn-neg" id="alertBtn" value="play alert noise">(Alert)</button>
         </section>
     </main>
     <footer>
     <hr />
         <audio id="bell" src="fx/bell.mp3" type="audio/mp3"></audio>
-        <div class="cr ">
+        <div class="cr">
             <a href="https://responsivevoice.org ">ResponsiveVoice-NonCommercial</a> licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/ ">
-          <img title="ResponsiveVoice Text To Speech " src="https://responsivevoice.org/wp-content/uploads/2014/08/95x15.png " alt="95x15 " width="95 " height="15 " />
+          <img title="ResponsiveVoice Text To Speech " src="https://responsivevoice.org/wp-content/uploads/2014/08/95x15.png " alt="Creative Commons banner" width="95" height="15" />
           </a>
         </div>
     </footer>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.1.1/typeahead.bundle.js'></script>
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-    <script src="index.js "></script>
+    <script src="./index.js "></script>
 </body>
 
 </html>
